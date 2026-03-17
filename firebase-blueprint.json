@@ -1,0 +1,71 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["ADMIN", "MEMBER"] },
+        "subscriptionType": { "type": "string", "enum": ["SAAS", "LICENSE"] },
+        "avatar": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "ContributionPlan": {
+      "title": "Contribution Plan",
+      "description": "A rotational savings plan",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "amount": { "type": "number" },
+        "frequency": { "type": "string", "enum": ["WEEKLY", "MONTHLY"] },
+        "duration": { "type": "integer" },
+        "maxMembers": { "type": "integer" },
+        "adminFeePercent": { "type": "number" },
+        "totalPooled": { "type": "number" },
+        "status": { "type": "string", "enum": ["DRAFT", "ACTIVE", "COMPLETED"] },
+        "slots": { "type": "array" },
+        "currentPosition": { "type": "integer" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "amount", "frequency", "maxMembers", "status"]
+    },
+    "Contribution": {
+      "title": "Contribution",
+      "description": "A payment made by a member to a plan",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "planId": { "type": "string" },
+        "memberId": { "type": "string" },
+        "memberName": { "type": "string" },
+        "amount": { "type": "number" },
+        "cycle": { "type": "integer" },
+        "status": { "type": "string", "enum": ["PENDING", "APPROVED", "REJECTED"] },
+        "proofUrl": { "type": "string" },
+        "paymentMethod": { "type": "string", "enum": ["ONLINE", "OFFLINE"] },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["id", "planId", "memberId", "amount", "status", "timestamp"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "Collection of user profiles"
+    },
+    "plans": {
+      "schema": "ContributionPlan",
+      "description": "Collection of savings plans"
+    },
+    "contributions": {
+      "schema": "Contribution",
+      "description": "Collection of member contributions"
+    }
+  }
+}
