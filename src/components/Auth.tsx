@@ -73,7 +73,7 @@ export const Auth: React.FC<AuthProps> = ({ onLogin }) => {
           <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-primary/20">
             <Shield className="text-background w-8 h-8" />
           </div>
-          <h1 className="text-4xl font-black tracking-tighter text-white mb-2">ESUSU</h1>
+          <h1 className="text-4xl font-black tracking-tighter text-white mb-2">ADASHE</h1>
           <p className="text-slate-400">
             {isLogin ? 'Welcome back to your savings portal.' : 'Start your journey to financial freedom.'}
           </p>
@@ -197,7 +197,7 @@ export const Auth: React.FC<AuthProps> = ({ onLogin }) => {
         </div>
 
         <p className="text-center mt-8 text-[10px] text-slate-600 uppercase tracking-[0.2em] font-bold">
-          Securely encrypted by ESUSU Shield
+          Securely encrypted by ADASHE Shield
         </p>
       </motion.div>
     </div>

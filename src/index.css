@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -9,22 +10,28 @@
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-danger: #EF4444;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
   
   --font-sans: "Inter", "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-background text-slate-200 font-sans antialiased;
+    @apply bg-background text-text-primary font-sans antialiased;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-card/50 backdrop-blur-md border border-border/50 shadow-xl;
+    @apply bg-card/40 backdrop-blur-xl border border-border/50 shadow-2xl;
   }
   
   .glow-primary {
-    @apply shadow-[0_0_20px_rgba(34,211,238,0.15)];
+    @apply shadow-[0_0_30px_rgba(34,211,238,0.2)];
+  }
+
+  .glow-accent {
+    @apply shadow-[0_0_30px_rgba(250,204,21,0.15)];
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "ESUSU - Digital Rotational Savings",
-  "description": "Modern rotational contributory savings platform for Africa. Digitize your ajo, esusu, and thrift systems with guaranteed payout orders.",
+  "name": "ADASHE - Digital Rotational Savings",
+  "description": "Modern rotational contributory savings platform for Africa. Digitize your ajo, adashe, and thrift systems with guaranteed payout orders.",
   "requestFramePermissions": [
     "camera",
     "microphone"

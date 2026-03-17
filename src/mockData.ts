@@ -2,8 +2,8 @@ import { ContributionPlan, User, Contribution } from './types';
 
 export const MOCK_ADMIN: User = {
   id: 'admin-1',
-  name: 'Esusu Admin',
-  email: 'admin@esusu.com',
+  name: 'Adashe Admin',
+  email: 'admin@adashe.com',
   role: 'ADMIN',
   subscriptionType: 'LICENSE',
   avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Admin',

@@ -49,7 +49,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, active
           <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
             <Wallet className="text-background w-6 h-6" />
           </div>
-          <span className="text-2xl font-bold tracking-tighter text-white">ESUSU</span>
+          <span className="text-2xl font-bold tracking-tighter text-white">ADASHE</span>
         </div>
 
         <nav className="flex-1 space-y-2">
@@ -93,7 +93,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, active
         <header className="lg:hidden flex items-center justify-between p-4 border-bottom border-border glass z-50">
           <div className="flex items-center gap-2">
             <Wallet className="text-primary w-6 h-6" />
-            <span className="text-xl font-bold tracking-tighter text-white">ESUSU</span>
+            <span className="text-xl font-bold tracking-tighter text-white">ADASHE</span>
           </div>
           <button onClick={() => setIsMobileMenuOpen(true)} className="p-2 text-slate-400">
             <Menu size={24} />
@@ -133,7 +133,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, user, onLogout, active
               <div className="flex items-center justify-between mb-10">
                 <div className="flex items-center gap-3">
                   <Wallet className="text-primary w-8 h-8" />
-                  <span className="text-2xl font-bold tracking-tighter text-white">ESUSU</span>
+                  <span className="text-2xl font-bold tracking-tighter text-white">ADASHE</span>
                 </div>
                 <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 text-slate-400">
                   <X size={24} />
